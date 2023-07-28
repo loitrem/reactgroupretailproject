@@ -115,10 +115,24 @@ height: 30px;
 
 .mainBanner {
   width: 100%;
-  height: 200px;
   margin-top: 35px;
   margin-bottom: 35px;
   border: solid orange;
+}
+
+.bannerBoxWrapper {
+  width: 350px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: auto auto ;
+  border:1px solid black;
+}
+
+.clothing {
+  height: 100px;
+  width: 125px;
+  border: solid black;
+  margin: auto;
 }
 
 .topMainWrapper{
@@ -168,5 +182,4 @@ height: 30px;
   margin-left: 15px;
   margin-right: 15px;
   border: solid purple;
-
 }

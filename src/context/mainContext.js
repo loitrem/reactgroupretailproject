@@ -11,7 +11,8 @@ console.log('mainContext');
     //sets the userState (creating state)
     const [data, setData] = useState(null);
     const [call, setCall] = useState('');
-    // const [pageNum, setPageNum] = useState(0);
+    const [product, setProduct]=useState(1);
+    const [productNum, setProductNum]=useState(1);
 
     const apiText = 'https://dummyjson.com/products'
     console.log('API CALL URL = ', apiText+call);
@@ -22,12 +23,6 @@ console.log('mainContext');
 
     useEffect(()=> {
         getData();
-        // if (call===''){
-        //     const getData = async () => {
-        //         let res = await axios.get(apiText+call);
-        //         await setData(res.data.products);     
-        //     }
-        // }
         },[call])
 
     return (
@@ -37,13 +32,14 @@ console.log('mainContext');
                 data, 
                 setData,
 
-                //add the second use state
                 call,
-                setCall
+                setCall,
+
+                product,
+                setProduct,
                 
-                //add the third use state
-                // pageNum,
-                // setPageNum
+                productNum,
+                setProductNum
             }}> 
         {props.children}
         </AppContext.Provider>

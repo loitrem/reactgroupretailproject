@@ -27,7 +27,22 @@ function Main() {
 
                     <div className="mainBannerWrapper">
 
-                        <div className="mainBanner">Banner Here</div>
+                        <div className="mainBanner">
+
+                            <div className="bannerBoxWrapper">
+                                <div className="clothing"></div>
+                                <div className="clothing"></div>
+                                <div className="clothing"></div>
+                                <div className="clothing"></div>
+                            </div>
+                            <div className="groceriesWrapper">
+
+                            </div>
+                            <div className="electronicWrapper">
+
+                            </div>
+
+                        </div>
 
                     </div>
 

@@ -14,7 +14,7 @@ function Categories() {
             <div className='test'>categories <br/><br/><br/> 
             {data.map((current, i)=>{
                 return (
-                <div className="info" key={i}>{current.title}</div>
+                <div className="info" key={i}>{current.category}</div>
                 )
             })}
             </div>

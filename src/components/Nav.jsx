@@ -29,7 +29,7 @@ function Nav (){
                     <div>Home</div>
                 </Link>
                 <Link to="/viewall">
-                    <div>View All</div>
+                    <div onClick={setCall('?limit=0')}>View All</div>
                 </Link>
                 <Link to="/categories">
                     <div>Categories</div>
