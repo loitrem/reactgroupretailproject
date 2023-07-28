@@ -1,39 +1,71 @@
 import React, {useEffect, useContext} from 'react'
 import { AppContext } from '../context/mainContext';
-import axios from 'axios';
-import ViewAll from './ViewAll';
+import { useNavigate } from "react-router-dom";
 
 
 function Main() {
 
     let {call, setCall}=useContext(AppContext);
     let {data, setData}=useContext(AppContext);
+    console.log("*************************");
+    console.log(call);
+    console.log("*************************");
 
-    const apiText = 'https://dummyjson.com/products'
-    console.log(apiText+call);
-    let once = false;
+    const navigate = useNavigate();
 
-    const getData = async () => {
-            let res = await axios.get(apiText+call);
-            await setData(res.data.products);
-    }
 
-    useEffect(()=> {
-    getData();
-    if (call===''){
-        const getData = async () => {
-            let res = await axios.get(apiText+call);
-            await setData(res.data.products);     
-        }
-    }
-    },[call])
 
     return (
-        <div>Main
+        <div onClick={()=>{
+            navigate('/viewall')
+            setCall('?limit=30')
+        }}>
+            test
+            <div className="mainWrapper">
 
-            <ViewAll />
+                <div className="main">
+
+                    <div className="mainBannerWrapper">
+
+                        <div className="mainBanner">Banner Here</div>
+
+                    </div>
+
+                    <div className="topMainWrapper">
+                        sale ads?
+                        <div className="topMain">Products Here</div>
+                        <div className="topMain">Products Here</div>
+                        <div className="topMain">Products Here</div>
+                        <div className="topMain">Products Here</div>
+                        <div className="topMain">Products Here</div>
+                        <div className="topMain">Products Here</div>
+
+                    </div>
+                    <div className="midMainWrapper">most viewed?
+                        <div className="midMain">Products Here</div>
+                        <div className="midMain">Products Here</div>
+                        <div className="midMain">Products Here</div>
+                        <div className="midMain">Products Here</div>
+                        <div className="midMain">Products Here</div>
+                        <div className="midMain">Products Here</div>
+
+                    </div>
+                    <div className="bottomMainWrapper">
+
+                        recommended?
+                        <div className="bottomMain">Products Here</div>
+                        <div className="bottomMain">Products Here</div>
+                        <div className="bottomMain">Products Here</div>
+                        <div className="bottomMain">Products Here</div>
+                        <div className="bottomMain">Products Here</div>
+                        <div className="bottomMain">Products Here</div>
+
+                    </div>
 
 
+                </div>
+
+            </div>
         </div>
     )
 }
