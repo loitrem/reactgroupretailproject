@@ -14,12 +14,7 @@ console.log('mainContext');
     const [call, setCall] = useState('');
     const [product, setProduct]=useState(1);
     const [productNum, setProductNum]=useState(1);
-    const [categories, setCategories]=useState(null);
-
-    console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
-    console.log('call',call);
-    console.log('data',data);
-    console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
+    const [categories, setCategories]=useState('');
 
     useEffect(()=> {
         const apiText = 'https://dummyjson.com/products'
@@ -28,17 +23,21 @@ console.log('mainContext');
                 let res = await axios.get(apiText+call);
                 setData(res.data.products);
         }
+        
         const getCategories = async () => {
             let res = await axios.get('https://dummyjson.com/products/categories');
             setCategories(res.data.products);
     }
-            getData();
-            getCategories();
-            
-        return ()=>{
-            
-        }
-        },[])
+        getData();
+        getCategories();
+
+        },[call])
+
+        console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
+        console.log('call',call);
+        console.log('data',data);
+        console.log('CATEGORIES = ', categories);
+        console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
 
     return (
             //gives state access to entire app
