@@ -9,15 +9,15 @@ function Categories() {
         
     },[])
 
-console.log('data view all', data);
+console.log('categories view all', categories);
     return (
         <div className='test'>categories <br/><br/><br/> 
         {categories.map((current, i)=>{
             return (
             <div className="info" key={i} onClick={()=>{
-                setCall('/category/'+current.category)
+                setCall('/category/'+current)
                 navigate('/view')
-            }}>{current.category}</div>
+            }}>{current}</div>
             )
         })}
         </div>

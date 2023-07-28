@@ -11,32 +11,40 @@ console.log('mainContext');
 
     //sets the userState (creating state)
     const [data, setData] = useState(null);
+    const [searchData, setSearchData] = useState(null);
     const [call, setCall] = useState('');
     const [product, setProduct]=useState(1);
     const [productNum, setProductNum]=useState(1);
     const [categories, setCategories]=useState('');
 
     useEffect(()=> {
-        const apiText = 'https://dummyjson.com/products'
-        console.log('API CALL URL = ', apiText+call);
+
         const getData = async () => {
-                let res = await axios.get(apiText+call);
+                let res = await axios.get('https://dummyjson.com/products');
                 setData(res.data.products);
+        }
+
+        const getSearchData = async () => {
+            let res = await axios.get('https://dummyjson.com/products'+call);
+            console.log('*******|||********|||******* CALL = ', call);
+            setSearchData(res.data.products);
         }
         
         const getCategories = async () => {
             let res = await axios.get('https://dummyjson.com/products/categories');
-            setCategories(res.data.products);
-    }
+            setCategories(res.data);
+        }
         getData();
         getCategories();
+        getSearchData()
 
-        },[call])
+        },[call, setCall])
 
         console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
-        console.log('call',call);
-        console.log('data',data);
+        console.log('call = ',call);
+        console.log('data = ',data);
         console.log('CATEGORIES = ', categories);
+        console.log('searchData = ',searchData);
         console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
 
     return (

@@ -6,11 +6,13 @@ import Categories from './components/Categories';
 import DisplaySearch from './components/DisplaySearch'
 import ProductPage from './components/ProductPage';
 import Nav from './components/Nav';
+import Search from './components/Search';
 
 function App() {
     return (
     <div className="App">
         <Nav />
+        <Search />
       <Routes>
         <Route path="/"  element={<Main/>} />
         <Route path="/view"  element={<ViewAll/>} />

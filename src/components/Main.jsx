@@ -14,85 +14,79 @@ function Main() {
     const navigate = useNavigate();
 
     return (
-        <div onClick={()=>{
-            navigate('/viewall')
-            setCall('?limit=30')
-        }}>
-            test
-            <div className="mainWrapper">
+        <div className="mainWrapper">
 
-                <div className="main">
+            <div className="main">
 
-                    <div className="mainBannerWrapper">
+                <div className="mainBannerWrapper">
 
-                        <div className="mainBanner">
+                    <div className="mainBanner">
 
-                            <div className="clothingBoxWrapper">
-                                <div className="clothing">
-                                    <div className="bannerTopImg">
-                                        <img src=''/>
-                                    </div>
-                                    <div className="bannerBottomTitle">
-                                        
-                                    </div>
+                        <div className="clothingBoxWrapper">
+                            <div className="clothing">
+                                <div className="bannerTopImg">
+                                    <img src=''/>
+                                </div>
+                                <div className="bannerBottomTitle">
                                     
                                 </div>
-                                <div className="clothing"></div>
-                                <div className="clothing"></div>
-                                <div className="clothing"></div>
+                                
                             </div>
-                            <div className="groceriesBoxWrapper">
-                                <div className="groceries"></div>
-                                <div className="groceries"></div>
-                                <div className="groceries"></div>
-                                <div className="groceries"></div>
-                            </div>
-                            <div className="electronicsBoxWrapper">
-                                <div className="electronics"></div>
-                                <div className="electronics"></div>
-                                <div className="electronics"></div>
-                                <div className="electronics"></div>
-                            </div>
-
+                            <div className="clothing"></div>
+                            <div className="clothing"></div>
+                            <div className="clothing"></div>
+                        </div>
+                        <div className="groceriesBoxWrapper">
+                            <div className="groceries"></div>
+                            <div className="groceries"></div>
+                            <div className="groceries"></div>
+                            <div className="groceries"></div>
+                        </div>
+                        <div className="electronicsBoxWrapper">
+                            <div className="electronics"></div>
+                            <div className="electronics"></div>
+                            <div className="electronics"></div>
+                            <div className="electronics"></div>
                         </div>
 
                     </div>
 
-                    <div className="topMainWrapper">
-                        sale ads?
-                        <div className="topMain">Products Here</div>
-                        <div className="topMain">Products Here</div>
-                        <div className="topMain">Products Here</div>
-                        <div className="topMain">Products Here</div>
-                        <div className="topMain">Products Here</div>
-                        <div className="topMain">Products Here</div>
+                </div>
 
-                    </div>
-                    <div className="midMainWrapper">most viewed?
-                        <div className="midMain">Products Here</div>
-                        <div className="midMain">Products Here</div>
-                        <div className="midMain">Products Here</div>
-                        <div className="midMain">Products Here</div>
-                        <div className="midMain">Products Here</div>
-                        <div className="midMain">Products Here</div>
+                <div className="topMainWrapper">
+                    sale ads?
+                    <div className="topMain">Products Here</div>
+                    <div className="topMain">Products Here</div>
+                    <div className="topMain">Products Here</div>
+                    <div className="topMain">Products Here</div>
+                    <div className="topMain">Products Here</div>
+                    <div className="topMain">Products Here</div>
 
-                    </div>
-                    <div className="bottomMainWrapper">
+                </div>
+                <div className="midMainWrapper">most viewed?
+                    <div className="midMain">Products Here</div>
+                    <div className="midMain">Products Here</div>
+                    <div className="midMain">Products Here</div>
+                    <div className="midMain">Products Here</div>
+                    <div className="midMain">Products Here</div>
+                    <div className="midMain">Products Here</div>
 
-                        recommended?
-                        <div className="bottomMain">Products Here</div>
-                        <div className="bottomMain">Products Here</div>
-                        <div className="bottomMain">Products Here</div>
-                        <div className="bottomMain">Products Here</div>
-                        <div className="bottomMain">Products Here</div>
-                        <div className="bottomMain">Products Here</div>
+                </div>
+                <div className="bottomMainWrapper">
 
-                    </div>
-
+                    recommended?
+                    <div className="bottomMain">Products Here</div>
+                    <div className="bottomMain">Products Here</div>
+                    <div className="bottomMain">Products Here</div>
+                    <div className="bottomMain">Products Here</div>
+                    <div className="bottomMain">Products Here</div>
+                    <div className="bottomMain">Products Here</div>
 
                 </div>
 
+
             </div>
+
         </div>
     )
 }
