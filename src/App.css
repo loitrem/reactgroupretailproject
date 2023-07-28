@@ -117,10 +117,11 @@ height: 30px;
   width: 100%;
   margin-top: 35px;
   margin-bottom: 35px;
-  border: solid orange;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.bannerBoxWrapper {
+.clothingBoxWrapper,.groceriesBoxWrapper,.electronicsBoxWrapper {
   width: 350px;
   height: 350px;
   display: grid;
@@ -128,7 +129,7 @@ height: 30px;
   border:1px solid black;
 }
 
-.clothing {
+.clothing,.groceries,.electronics {
   height: 100px;
   width: 125px;
   border: solid black;

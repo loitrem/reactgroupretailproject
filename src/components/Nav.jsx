@@ -9,7 +9,6 @@ function Nav (){
     const navigate = useNavigate();
     const searchRef = useRef(null)
 
-
     let searchValue = '';
 
     const search = (value)=> {
@@ -20,7 +19,7 @@ function Nav (){
     const handleChange = (event) =>{
         searchValue = event.target.value
     }
-
+    
     return (
         <div className="navWrapper">
             <div className="header">Shopping Company - Jungle?</div>
@@ -28,11 +27,15 @@ function Nav (){
                 <Link to="/">
                     <div>Home</div>
                 </Link>
-                <Link to="/viewall">
-                    <div onClick={setCall('?limit=0')}>View All</div>
+                <Link to="/view">
+                    <div onClick={()=>{
+                        setCall('?limit=0')
+                    }}>View All</div>
                 </Link>
                 <Link to="/categories">
-                    <div>Categories</div>
+                    <div onClick={()=>{
+                        setCall('/categories')
+                    }}>Categories</div>
                 </Link>
                 <Link to="/displaysearch">
                     <div className="search"><div className="searchInputWrapper"></div><input ref={searchRef} type="text" className="searchInput" onChange={handleChange} /><div className="searchBtnWrapper"><button className="searchBtn" onClick={()=>{

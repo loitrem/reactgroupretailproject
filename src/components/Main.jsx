@@ -13,8 +13,6 @@ function Main() {
 
     const navigate = useNavigate();
 
-
-
     return (
         <div onClick={()=>{
             navigate('/viewall')
@@ -29,17 +27,31 @@ function Main() {
 
                         <div className="mainBanner">
 
-                            <div className="bannerBoxWrapper">
-                                <div className="clothing"></div>
+                            <div className="clothingBoxWrapper">
+                                <div className="clothing">
+                                    <div className="bannerTopImg">
+                                        <img src=''/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        
+                                    </div>
+                                    
+                                </div>
                                 <div className="clothing"></div>
                                 <div className="clothing"></div>
                                 <div className="clothing"></div>
                             </div>
-                            <div className="groceriesWrapper">
-
+                            <div className="groceriesBoxWrapper">
+                                <div className="groceries"></div>
+                                <div className="groceries"></div>
+                                <div className="groceries"></div>
+                                <div className="groceries"></div>
                             </div>
-                            <div className="electronicWrapper">
-
+                            <div className="electronicsBoxWrapper">
+                                <div className="electronics"></div>
+                                <div className="electronics"></div>
+                                <div className="electronics"></div>
+                                <div className="electronics"></div>
                             </div>
 
                         </div>

@@ -32,7 +32,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import {AppContext} from '../context/mainContext'
 import {useEffect, useContext} from 'react'
-function ViewAll(props) {
+function ViewAll() {
 
     let {data,setCall, setProduct,productNum, setProductNum }=useContext(AppContext);
 
@@ -56,7 +56,7 @@ function ViewAll(props) {
             });
         }
     }
-  return (
+    return (
     <div className='ViewAll'>
         <div className="mainDiv">
             <div className="previous" onClick={(reverseCount)}>View Previous Product</div>
