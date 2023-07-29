@@ -1,17 +1,23 @@
 import React, {useEffect, useContext} from 'react'
 import { AppContext } from '../context/mainContext';
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
+function Main(props) {
 
-function Main() {
-
-    let {call, setCall}=useContext(AppContext);
-    let {data, setData}=useContext(AppContext);
     console.log("*************************");
-    console.log(call);
+    console.log('Main Page Data ', props.products);
     console.log("*************************");
 
     const navigate = useNavigate();
+
+    let dataArray = []
+
+    if (props.products){
+        props.products.map((current)=>{
+            dataArray.push(current);
+        })
+    }
 
     return (
         <div className="mainWrapper">
@@ -25,7 +31,7 @@ function Main() {
                         <div className="clothingBoxWrapper">
                             <div className="clothing">
                                 <div className="bannerTopImg">
-                                    <img src=''/>
+                                <img src={dataArray[42].images[0]}/>
                                 </div>
                                 <div className="bannerBottomTitle">
                                     
