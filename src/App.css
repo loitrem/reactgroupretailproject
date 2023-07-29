@@ -139,7 +139,7 @@ height: 100%;
   background-color: rgb(62, 132, 70);
 }
 
-.clothingBoxWrapper,.groceriesBoxWrapper,.electronicsBoxWrapper {
+.clothingBoxWrapper,.furnitureBoxWrapper,.electronicsBoxWrapper {
   width: 350px;
   height: 300px;
   border: 1px solid black;
@@ -149,7 +149,7 @@ height: 100%;
   background-color: whitesmoke;
 }
 
-.clothingTitle {
+.clothingTitle,.furnitureTitle,.electronicsTitle {
   width: 100%;
   height: 50px;
   display: flex;
@@ -159,19 +159,19 @@ height: 100%;
   font-weight: bold;
 }
 
-.clothingOuter{
+.clothingOuter,.furnitureOuter,.electronicsOuter{
 width: 100%;
 height: 100%;
 display: flex;
 
 }
 
-.clothing,.groceries,.electronics {
+.clothing,.furniture,.electronics {
   height: 225px;
   width: 135px;
   border: solid black;
   margin: auto;
-  
+  background-color: white;
 }
 
 .bannerTopImgWrapper{

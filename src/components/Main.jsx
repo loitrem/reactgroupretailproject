@@ -46,44 +46,44 @@ function Main(props) {
                                 </div>
                             </div>
                         </div>
-                        <div className="groceriesBoxWrapper">
-                        <div className="clothingTitle">Clothing</div>
-                            <div className="clothingOuter">
-                                <div className="clothing">
+                        <div className="electronicsBoxWrapper">
+                        <div className="electronicsTitle">Electronics</div>
+                            <div className="electronicsOuter">
+                                <div className="electronics">
                                     <div className="bannerTopImgWrapper">
-                                        <img className='bannerTopImg' src={dataArray[42].images[4]}/>
+                                        <img className='bannerTopImg' src={dataArray[1].images[2]}/>
                                     </div>
                                     <div className="bannerBottomTitle">
-                                        Women's Apparel
+                                        Smartphones
                                     </div>
                                 </div>
-                                <div className="clothing">
+                                <div className="electronics">
                                     <div className="bannerTopImgWrapper">
-                                        <img className='bannerTopImg' src={dataArray[51].images[2]}/>
+                                        <img className='bannerTopImg' src={dataArray[7].images[4]}/>
                                     </div>
                                     <div className="bannerBottomTitle">
-                                        Men's Apparel
+                                        Laptops
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="electronicsBoxWrapper">
-                        <div className="clothingTitle">Clothing</div>
-                            <div className="clothingOuter">
-                                <div className="clothing">
+                        <div className="furnitureBoxWrapper">
+                        <div className="furnitureTitle">Furniture</div>
+                            <div className="furnitureOuter">
+                                <div className="furniture">
                                     <div className="bannerTopImgWrapper">
-                                        <img className='bannerTopImg' src={dataArray[42].images[4]}/>
+                                        <img className='bannerTopImg' src={dataArray[31].images[1]}/>
                                     </div>
                                     <div className="bannerBottomTitle">
-                                        Women's Apparel
+                                        Outdoor
                                     </div>
                                 </div>
-                                <div className="clothing">
+                                <div className="furniture">
                                     <div className="bannerTopImgWrapper">
-                                        <img className='bannerTopImg' src={dataArray[51].images[2]}/>
+                                        <img className='bannerTopImg' src={dataArray[34].images[0]}/>
                                     </div>
                                     <div className="bannerBottomTitle">
-                                        Men's Apparel
+                                        Dressers
                                     </div>
                                 </div>
                             </div>

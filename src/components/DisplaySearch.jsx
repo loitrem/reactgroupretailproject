@@ -1,25 +1,59 @@
-import React, {useEffect, useContext} from 'react'
+import React, {useEffect, useContext, useState} from 'react'
 import { AppContext } from '../context/mainContext';
+import axios from 'axios';
 
 
 function DisplaySearch() {
-    let {searchData, setSearchData,call,setCall}=useContext(AppContext);
-    // if (!searchData){
-    //     setCall('?limit=0')
-    // }
-    console.log('///////////////',searchData, call);
 
+    let {call, data}=useContext(AppContext);
+    let [searchData, setSearchData]=useState(null)
+
+    let initial = true
+
+    let searchText = ''
+
+
+    useEffect(()=>{
+
+        // if (initial){
+        const getSearchData = async () => {
+            let res = await axios.get('https://dummyjson.com/products'+call);
+            setSearchData(res.data.products);
+
+        }
+    // }
+    getSearchData()
+    initial = false
+    },[call])
+
+    console.log('SEARCH TEXT ?? ', call);
+    console.log('SEARCH DATA ?? ', searchData);
     return (
         <div>
-        <div>DisplaySearch</div>
+        <h2>DisplaySearch</h2>
         <div>
-        {searchData.map((current, i)=>{
+        {searchData ? searchData.map((current, i)=>{
             return (
-            <div className="info" key={i}>{current.title}</div>
+            <div className="displayWrapper" key={i}>
+                <div className='display'>
+                    <div className='image'>
+                        <img src={current.images[0]}/>
+                    </div>
+                    <div className='titleInfo'>
+                        <div className="info title">{current.title}</div>
+                    </div>
+                    <div className='searchInfo'>
+                        <div className="info rating">Rating : {current.rating}</div>
+                        <div className="info price">${current.price}</div>
+                        <div className="info stock">Only {current.stock}left in stock</div>
+                        <div className="info description">{current.description}</div>
+                    </div>
+                </div>
+            </div>               
             )
-        })}
-    </div></div>
-    )
-}
+        }):<div>Loading</div>}
+        </div></div>
+        )
+    }
 
 export default DisplaySearch

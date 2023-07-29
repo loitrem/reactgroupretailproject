@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import { AppContext } from '../context/mainContext';
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import axios from "axios";
 
 function Search() {
     let {setCall}=useContext(AppContext);
@@ -19,6 +20,7 @@ function Search() {
     const handleChange = (event) =>{
         searchValue = event.target.value
     }
+
     return (
         <div className="searchWrapper">
             <div className="search">
@@ -27,7 +29,7 @@ function Search() {
                 </div>
                 <div className="searchBtnWrapper">
                     <button className="searchBtn" onClick={()=>{
-                        navigate('/displaysearch')
+                        navigate('/displaysearch') 
                         search(searchValue)
                         searchRef.current.value = '';
                         }}>

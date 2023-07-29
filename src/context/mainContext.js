@@ -9,8 +9,8 @@ console.log('mainContext');
 
     //sets the userState (creating state)
     const [data, setData] = useState(null);
-    const [searchData, setSearchData] = useState(null);
     const [call, setCall] = useState('');
+    const [cat, setCat] = useState('');
     const [product, setProduct]=useState(1);
     const [productNum, setProductNum]=useState(1);
     const [categories, setCategories]=useState('');
@@ -19,7 +19,6 @@ console.log('mainContext');
         console.log('call = ',call);
         console.log('data = ',data);
         console.log('CATEGORIES = ', categories);
-        console.log('searchData = ',searchData);
         console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
 
     return (
@@ -41,9 +40,9 @@ console.log('mainContext');
                 categories,
                 setCategories,
 
-                searchData,
-                setSearchData
-            
+                cat, 
+                setCat
+
             }}> 
         {props.children}
         </AppContext.Provider>
