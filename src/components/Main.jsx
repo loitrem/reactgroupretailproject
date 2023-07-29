@@ -23,36 +23,70 @@ function Main(props) {
         <div className="mainWrapper">
 
             <div className="main">
-
                 <div className="mainBannerWrapper">
-
                     <div className="mainBanner">
-
                         <div className="clothingBoxWrapper">
-                            <div className="clothing">
-                                <div className="bannerTopImg">
-                                <img src={dataArray[42].images[0]}/>
+                            <div className="clothingTitle">Clothing</div>
+                            <div className="clothingOuter">
+                                <div className="clothing">
+                                    <div className="bannerTopImgWrapper">
+                                        <img className='bannerTopImg' src={dataArray[42].images[4]}/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        Women's Apparel
+                                    </div>
                                 </div>
-                                <div className="bannerBottomTitle">
-                                    
+                                <div className="clothing">
+                                    <div className="bannerTopImgWrapper">
+                                        <img className='bannerTopImg' src={dataArray[51].images[2]}/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        Men's Apparel
+                                    </div>
                                 </div>
-                                
                             </div>
-                            <div className="clothing"></div>
-                            <div className="clothing"></div>
-                            <div className="clothing"></div>
                         </div>
                         <div className="groceriesBoxWrapper">
-                            <div className="groceries"></div>
-                            <div className="groceries"></div>
-                            <div className="groceries"></div>
-                            <div className="groceries"></div>
+                        <div className="clothingTitle">Clothing</div>
+                            <div className="clothingOuter">
+                                <div className="clothing">
+                                    <div className="bannerTopImgWrapper">
+                                        <img className='bannerTopImg' src={dataArray[42].images[4]}/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        Women's Apparel
+                                    </div>
+                                </div>
+                                <div className="clothing">
+                                    <div className="bannerTopImgWrapper">
+                                        <img className='bannerTopImg' src={dataArray[51].images[2]}/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        Men's Apparel
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="electronicsBoxWrapper">
-                            <div className="electronics"></div>
-                            <div className="electronics"></div>
-                            <div className="electronics"></div>
-                            <div className="electronics"></div>
+                        <div className="clothingTitle">Clothing</div>
+                            <div className="clothingOuter">
+                                <div className="clothing">
+                                    <div className="bannerTopImgWrapper">
+                                        <img className='bannerTopImg' src={dataArray[42].images[4]}/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        Women's Apparel
+                                    </div>
+                                </div>
+                                <div className="clothing">
+                                    <div className="bannerTopImgWrapper">
+                                        <img className='bannerTopImg' src={dataArray[51].images[2]}/>
+                                    </div>
+                                    <div className="bannerBottomTitle">
+                                        Men's Apparel
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
