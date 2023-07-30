@@ -15,13 +15,12 @@ function DisplaySearch() {
 
     useEffect(()=>{
 
-        // if (initial){
         const getSearchData = async () => {
             let res = await axios.get('https://dummyjson.com/products'+call);
             setSearchData(res.data.products);
 
         }
-    // }
+
     getSearchData()
     initial = false
     },[call])

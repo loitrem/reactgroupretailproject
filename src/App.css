@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: whitesmoke;
+  background-image: url('./jungle1.jpeg');
 }
 
 .App-logo {
@@ -83,6 +84,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 border: solid black;
+background-color: whitesmoke
 }
 
 .search {

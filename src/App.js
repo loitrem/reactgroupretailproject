@@ -13,6 +13,7 @@ import ViewCategory from './components/ViewCategory';
 function App() {
     return (
     <div className="App">
+        
         <Nav />
         <Search />
       <Routes>
