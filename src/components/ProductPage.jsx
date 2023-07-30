@@ -6,24 +6,20 @@ function ProductPage() {
         console.log('IN PRODUCT PAGE');
         console.log('product info = ', product);
     return (
-        <div className='productPage'>
-            <div className="eachProduct">
-                <img src={product.images[0]} className='productImg' alt='' />
-                <div className="product">
-                    {product.title}
+        <div className='productPageWrapper'>
+            <div className="productPage">
+            <div className="productPageCellLeft">
+                <div className="productPageImg">
+                <img className='productPageLeftImg' src={product.images[0]} alt='' />
                 </div>
-                <div className="description">
-                    {product.description}
-                </div>
-                <div className="price">
-                    ${product.price}
-                </div>
-                <div className="rating">
-                    Rating: {product.rating}
-                </div>
-                <div className="brand">
-                    {product.brand}
-                </div>
+            </div>
+            <div className="productPageCellRight">
+                <div className="productPageNameRight">{product.title}</div>
+                <div className="productPageDescRight">{product.description}</div>
+                <div className="productPageBrandRight">Brand: {product.brand}</div>
+                <div className="productPageRatingRight">Customer Rating: {product.rating}</div>
+                <div className="productPagePriceRight">${product.price}</div>
+            </div>
             </div>
         </div>
     )

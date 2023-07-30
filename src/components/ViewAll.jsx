@@ -55,7 +55,7 @@ function ViewAll() {
                                         <div className="productPriceRight">${current.price}</div>
                                     </div>
                                 </div>
-                                </div>
+                            </div>
                             )
                         })}
                     </div>
