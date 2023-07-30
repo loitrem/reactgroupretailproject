@@ -3,7 +3,7 @@ import React, {useContext} from "react";
 import { AppContext } from '../context/mainContext';
 import logo from '../logoJungle.png';
 import cart from '../cart.png';
-
+import Search from "./Search";
 
 function Nav (){
     let {setCall}=useContext(AppContext);
@@ -12,6 +12,7 @@ function Nav (){
         <div className="navWrapper">
             <div className="header">
                 <div className="headerLeft"><a href="#" className="logoHome"><img src={logo} alt="" className="logo" /></a></div>
+                <div className="HeaderMiddle"><Search/></div>
                 <div className="headerRight">
                     <div className="topHeaderLinks">
                         <a href="#" className="login">Login</a> | 

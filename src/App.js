@@ -16,7 +16,6 @@ function App() {
     <div className="App">
         
         <Nav />
-        <Search />
       <Routes>
         <Route path="/"  element={<ApiCalls/>} />
         <Route path="/view"  element={<ViewAll/>} />

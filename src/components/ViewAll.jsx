@@ -28,35 +28,42 @@ function ViewAll() {
     }
     return (
     <div className='ViewAll'>
-        <div className="mainDiv">
-            <div className="previous" onClick={(reverseCount)}>View Previous Product</div>
-            <div className="next" onClick={(addCount)}>View Next Product</div>
-        </div>
-        <div className="products">
 
-            {data.map((current, i) => {
-                return (
-                    <div className="showProduct" key={i} onClick={()=>{
-                        navigate('/productpage');
-                        setProduct(current)
-                    }}>
+        <div className="productsWrapper">
+            <div className="products">
 
-                        <div className="productImg">
-                            {/* Image */}
-                            <img src={current.image} alt='' />
-                        </div>
-                        <div className="productName">
-                            {/* Name */}
-                            {current.title}
-                        </div>
-                        <div className="productPrice">
-                            {/* Price */}
-                            ${current.price}
-                        </div>
+                <div className="productCellWrapper">
+                    <div className="productCellMain">
+                        {data.map((current, i) => {
+                            return (
+
+                                <div className="productCell">
+                                <div className="showProduct" key={i} onClick={()=>{
+                                    navigate('/productpage');
+                                    setProduct(current)
+                                    }}>
+                                    <div className="productCellLeft">
+                                        <div className="productImg">
+                                        <img className='productLeftImg' src={current.images[0]} alt='' />
+                                        </div>
+                                    </div>
+                                    <div className="productCellRight">
+                                        <div className="productNameRight">{current.title}</div>
+                                        <div className="productDescRight">{current.description}</div>
+                                        <div className="productBrandRight">Brand: {current.brand}</div>
+                                        <div className="productRatingRight">Customer Rating: {current.rating}</div>
+                                        <div className="productPriceRight">${current.price}</div>
+                                    </div>
+                                </div>
+                                </div>
+                            )
+                        })}
                     </div>
-                )
-            })}
+                </div>
+                
+            </div>
         </div>
+        
     </div>
   )
 }
