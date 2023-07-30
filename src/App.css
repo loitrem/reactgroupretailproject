@@ -415,10 +415,6 @@ align-items: center;
   font-size: 14px;
 }
 
-.list {
-
-}
-
 .productsWrapper {
   width: 100%;
 }
@@ -548,4 +544,54 @@ align-items: center;
 .productPagePriceRight {
   font-size: 26px;
   font-weight: bold;
+}
+
+.categoriesWrapper {
+  width: 100%;
+}
+
+.categoriesMain {
+  width: 80%;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.categoriesLeft {
+  width: 300px;
+  border: 1px solid whitesmoke;
+
+}
+
+.categoriesList {
+  margin-top: 25px; 
+  border: 1px solid lightgray;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.categoriesRight {
+  width: 100%;
+}
+
+.catUL {
+  list-style: none;
+  padding: 0;
+}
+
+.categoryName {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.categoryName:hover {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px;
+  cursor: pointer;
+  color: rgb(30, 240, 135);
 }

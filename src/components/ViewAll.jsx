@@ -11,21 +11,6 @@ function ViewAll() {
         setProduct(productNum)
     },[productNum])
 
-    const addCount = (amount) => {
-        if (productNum<10){
-            setProductNum(currentProduct => {
-                return currentProduct + amount
-            });
-        }
-    }
-
-    const reverseCount = (amount) => {
-        if (productNum>0){
-            setProductNum(currentProduct => {
-                return currentProduct - amount
-            });
-        }
-    }
     return (
     <div className='ViewAll'>
 

@@ -1,15 +1,12 @@
 import './App.css';
 import {Route, Routes} from 'react-router-dom';
-import Main from './components/Main';
 import ViewAll from './components/ViewAll';
 import Categories from './components/Categories';
 import DisplaySearch from './components/DisplaySearch'
 import ProductPage from './components/ProductPage';
 import Nav from './components/Nav';
-import Search from './components/Search';
 import ApiCalls from './components/ApiCalls';
-import ViewCategory from './components/ViewCategory';
-import { startTransition } from 'react';
+
 
 function App() {
     return (
@@ -22,7 +19,6 @@ function App() {
         <Route path="/categories"  element={<Categories/>} />
         <Route path="/displaysearch"  element={<DisplaySearch/>} />
         <Route path="/productpage"  element={<ProductPage/>} />
-        <Route path="/viewcategory"  element={<ViewCategory/>} />
       </Routes>
     </div>
   );
