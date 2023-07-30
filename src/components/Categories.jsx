@@ -28,7 +28,7 @@ function Categories() {
                                     return (
                                     <div className="categoryName" key={i} onClick={()=>{
                                         setCat('/category/'+current)
-                                        // navigate('/viewcategory')
+                                        navigate('/viewcategory')
                                         
                                     }}><li className="catLI">{current}</li>
                                     </div>
@@ -41,33 +41,8 @@ function Categories() {
                     <div className="productsWrapper">
                 <div className="products">
     
-                    <div className="productCellWrapper">
-                        <div className="productCellMain">
-                            {catData ? catData.map((current, i) => {
-                                return (
-    
-                                    <div className="productCell" key={i}>
-                                    <div className="showProduct"  onClick={()=>{
-                                        navigate('/productpage');
-                                        setProduct(current)
-                                        }}>
-                                        <div className="productCellLeft">
-                                            <div className="productImg">
-                                            <img className='productLeftImg' src={current.images[0]} alt='' />
-                                            </div>
-                                        </div>
-                                        <div className="productCellRight">
-                                            <div className="productNameRight">{current.title}</div>
-                                            <div className="productDescRight">{current.description}</div>
-                                            <div className="productBrandRight">Brand: {current.brand}</div>
-                                            <div className="productRatingRight">Customer Rating: {current.rating}</div>
-                                            <div className="productPriceRight">${current.price}</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                )
-                            }) : <div>loading</div>}
-                        </div>
+                    <div className="categoryText">
+                            Please select a category to search
                     </div>
                     
                 </div>
