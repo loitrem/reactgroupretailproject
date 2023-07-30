@@ -13,7 +13,6 @@ function Search() {
     let searchValue = '';
 
     const search = (value)=> {
-        console.log('/search?q='+value);
         setCall('/search?q='+value)
     }
 

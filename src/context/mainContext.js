@@ -15,12 +15,6 @@ console.log('mainContext');
     const [productNum, setProductNum]=useState(1);
     const [categories, setCategories]=useState('');
 
-        console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
-        console.log('call = ',call);
-        console.log('data = ',data);
-        console.log('CATEGORIES = ', categories);
-        console.log('||||||||||||||||||||||||||||||||||||||||||||||||||');
-
     return (
             //gives state access to entire app
             <AppContext.Provider value={{

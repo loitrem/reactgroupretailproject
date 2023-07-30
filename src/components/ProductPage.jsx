@@ -3,8 +3,6 @@ import {AppContext} from '../context/mainContext'
 function ProductPage() {
     let {product}=useContext(AppContext);
 
-        console.log('IN PRODUCT PAGE');
-        console.log('product info = ', product);
     return (
         <div className='productPageWrapper'>
             <div className="productPage">

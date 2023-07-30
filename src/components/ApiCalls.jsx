@@ -12,14 +12,7 @@ function ApiCalls() {
     const getData = async () => {
         let res = await axios.get('https://dummyjson.com/products?limit=0');
         setData(res.data.products);
-        console.log(res.data.products);
     }
-
-    // const getSearchData = async () => {
-    //     let res = await axios.get('https://dummyjson.com/products'+call);
-    //     console.log('*******|||********|||******* CALL = ', call);
-    //     setSearchData(res.data.products);
-    // }
 
     const getCategories = async () => {
         let res = await axios.get('https://dummyjson.com/products/categories');
@@ -40,12 +33,6 @@ function ApiCalls() {
                 setData(res.data.products);
 
             }
-
-            // const getSearchData = async () => {
-            //     let res = await axios.get('https://dummyjson.com/products'+call);
-            //     console.log('*******|||********|||******* CALL = ', call);
-            //     setSearchData(res.data.products);
-            // }
             
             const getCategories = async () => {
                 let res = await axios.get('https://dummyjson.com/products/categories');
@@ -58,7 +45,6 @@ function ApiCalls() {
         },[call, setCall])
 
 
-        console.log('DATA =================', data);
         //  loaded function for when data is fetched
         const loaded = () => {
             return (

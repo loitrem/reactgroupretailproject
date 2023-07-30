@@ -5,10 +5,6 @@ import axios from "axios";
 
 function Main(props) {
 
-    console.log("*************************");
-    console.log('Main Page Data ', props.products);
-    console.log("*************************");
-
     const navigate = useNavigate();
 
     let dataArray = []

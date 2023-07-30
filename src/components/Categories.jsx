@@ -13,7 +13,6 @@ function Categories() {
         const getSearchData = async () => {
             let res = await axios.get('https://dummyjson.com/products'+ cat);
             setCatData(res.data.products);
-            console.log('CAT CHANGED SO DATA IS GOING *****************************');
         }
     getSearchData()
     },[cat])

@@ -25,8 +25,6 @@ function DisplaySearch() {
     initial = false
     },[call])
 
-    console.log('SEARCH TEXT ?? ', call);
-    console.log('SEARCH DATA ?? ', searchData);
     return (
         <div>
         <h2>DisplaySearch</h2>
