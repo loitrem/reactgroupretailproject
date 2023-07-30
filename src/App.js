@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import Search from './components/Search';
 import ApiCalls from './components/ApiCalls';
 import ViewCategory from './components/ViewCategory';
+import { startTransition } from 'react';
 
 function App() {
     return (
