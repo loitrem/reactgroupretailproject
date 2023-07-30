@@ -178,7 +178,7 @@ display: flex;
 
 }
 
-.bannerTopImg{
+.bannerTopImg,.topMainTopImg{
 height: 160px;
 width: 135px;
 }
@@ -195,17 +195,76 @@ width: 135px;
 .topMainWrapper{
   width: 100%;
   margin-bottom: 35px;
-  border: solid red;
   display: flex;
   justify-content: space-evenly;
 }
 
+.topMainContainer {
+  width: 100%;
+  display: flex;
+}
+
 .topMain {
-  width: 200px;
-  height: 250px;
+  width: 800px;
+  height: 200px;
   margin-left: 15px;
   margin-right: 15px;
-  border: solid purple;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+
+}
+
+.topMainTopImg{
+height: 200px;
+width: 165px;
+display: flex;
+align-items: center;
+}
+
+.topMainBottom{
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  line-height: 15px;
+}
+
+.topMainBottomTitle {
+  font-size: 24px;
+  font-weight: bold;
+  line-height:25px;
+}
+
+.topMainBottomBrand {
+  font-size: 12px;
+  font-weight: bold;
+    line-height:30px;
+}
+
+.topMainBottomRating {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.topMainBottomSalePriceWrapper {
+
+}
+
+.topMainBottomRegularPrice {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.percentageOff {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.topMainBottomSalePrice {
+  font-size: 20px;
+  font-weight: bold;
+  line-height:30px;
 }
 
 .midMainWrapper {

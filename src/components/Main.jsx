@@ -94,14 +94,53 @@ function Main(props) {
                 </div>
 
                 <div className="topMainWrapper">
-                    sale ads?
-                    <div className="topMain">Products Here</div>
-                    <div className="topMain">Products Here</div>
-                    <div className="topMain">Products Here</div>
-                    <div className="topMain">Products Here</div>
-                    <div className="topMain">Products Here</div>
-                    <div className="topMain">Products Here</div>
-
+                    <div className="topMainContainer">
+                        <div className="topMain">
+                            <div className="topMainTop">
+                                <img className='topMainTopImg' src={dataArray[14].images[0]} alt="" />
+                            </div>
+                            <div className="topMainBottom">
+                                <div className="topMainBottomTitle">{dataArray[14].title}</div>
+                                <div className="topMainBottomBrand">{dataArray[14].brand}</div>
+                                <div className="topMainBottomRating">Customer Rating: {dataArray[14].rating}</div>
+                                <div className="topMainBottomSalePriceWrapper">
+                                    <div className="topMainBottomRegularPrice">Reg. <strike>${dataArray[14].price}</strike> </div>
+                                    <div className="percentageOff">{dataArray[15].discountPercentage}%</div>
+                                </div>
+                                <div className="topMainBottomSalePrice">${parseFloat((dataArray[15].price*(dataArray[15].discountPercentage/100)+dataArray[15].price)).toFixed(2)}</div>
+                            </div>
+                        </div>
+                        <div className="topMain">
+                            <div className="topMainTop">
+                                <img className='topMainTopImg' src={dataArray[23].images[0]} alt="" />
+                            </div>
+                            <div className="topMainBottom">
+                                <div className="topMainBottomTitle">{dataArray[23].title}</div>
+                                <div className="topMainBottomBrand">{dataArray[23].brand}</div>
+                                <div className="topMainBottomRating">Customer Rating: {dataArray[23].rating}</div>
+                                <div className="topMainBottomSalePriceWrapper">
+                                    <div className="topMainBottomRegularPrice">Reg. <strike>${dataArray[23].price}</strike> </div>
+                                    <div className="percentageOff">{dataArray[23].discountPercentage}%</div>
+                                </div>
+                                <div className="topMainBottomSalePrice">${parseFloat((dataArray[23].price*(dataArray[23].discountPercentage/100)+dataArray[15].price)).toFixed(2)}</div>
+                            </div>
+                        </div>
+                        <div className="topMain">
+                            <div className="topMainTop">
+                                <img className='topMainTopImg' src={dataArray[17].images[0]} alt="" />
+                            </div>
+                            <div className="topMainBottom">
+                                <div className="topMainBottomTitle">{dataArray[17].title}</div>
+                                <div className="topMainBottomBrand">{dataArray[17].brand}</div>
+                                <div className="topMainBottomRating">Customer Rating: {dataArray[17].rating}</div>
+                                <div className="topMainBottomSalePriceWrapper">
+                                    <div className="topMainBottomRegularPrice">Reg. <strike>${dataArray[17].price}</strike> </div>
+                                    <div className="percentageOff">{dataArray[17].discountPercentage}%</div>
+                                </div>
+                                <div className="topMainBottomSalePrice">${parseFloat((dataArray[15].price*(dataArray[15].discountPercentage/100)+dataArray[15].price)).toFixed(2)}</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="midMainWrapper">most viewed?
                     <div className="midMain">Products Here</div>
