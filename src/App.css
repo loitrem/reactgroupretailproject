@@ -601,3 +601,16 @@ align-items: center;
   font-size: 50px;
   margin-top: 150px;
 }
+
+.searchCellWrapper {
+  height: 800px;
+  width: 100%;
+}
+
+.searchCellMain {
+  height: 800px;
+  width: 80%;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+}

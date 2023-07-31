@@ -1,12 +1,15 @@
 import React, {useEffect, useContext, useState} from 'react'
 import { AppContext } from '../context/mainContext';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 function DisplaySearch() {
 
-    let {call, data}=useContext(AppContext);
+    let {call, data, setProduct}=useContext(AppContext);
     let [searchData, setSearchData]=useState(null)
+
+    const navigate = useNavigate();
 
     let initial = true
 
@@ -24,32 +27,45 @@ function DisplaySearch() {
     getSearchData()
     initial = false
     },[call])
-
-    return (
-        <div>
-        <h2>DisplaySearch</h2>
-        <div>
-        {searchData ? searchData.map((current, i)=>{
-            return (
-            <div className="displayWrapper" key={i}>
-                <div className='display'>
-                    <div className='image'>
-                        <img src={current.images[0]}/>
-                    </div>
-                    <div className='titleInfo'>
-                        <div className="info title">{current.title}</div>
-                    </div>
-                    <div className='searchInfo'>
-                        <div className="info rating">Rating : {current.rating}</div>
-                        <div className="info price">${current.price}</div>
-                        <div className="info stock">Only {current.stock}left in stock</div>
-                        <div className="info description">{current.description}</div>
+        return (
+            <div className='ViewAll'>
+        
+                <div className="productsWrapper">
+                    <div className="products">
+        
+                        <div className="searchCellWrapper">
+                            <div className="searchCellMain">
+                                {searchData ? searchData.map((current, i)=>{
+                                    return (
+        
+                                        <div className="productCell">
+                                        <div className="showProduct" key={i} onClick={()=>{
+                                            navigate('/productpage');
+                                            setProduct(current)
+                                            }}>
+                                            <div className="productCellLeft">
+                                                <div className="productImg">
+                                                <img className='productLeftImg' src={current.images[0]} alt='' />
+                                                </div>
+                                            </div>
+                                            <div className="productCellRight">
+                                                <div className="productNameRight">{current.title}</div>
+                                                <div className="productDescRight">{current.description}</div>
+                                                <div className="productBrandRight">Brand: {current.brand}</div>
+                                                <div className="productRatingRight">Customer Rating: {current.rating}</div>
+                                                <div className="productPriceRight">${current.price}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    )
+                                }):<div>Loading</div>}
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-            </div>               
-            )
-        }):<div>Loading</div>}
-        </div></div>
+                
+            </div>
         )
     }
 

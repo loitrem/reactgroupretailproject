@@ -25,8 +25,10 @@ function ViewCategory() {
         setProduct(productNum)
     },[productNum])
 
+    //sets new array
     let myArray = []
 
+    //if catData is true map through catData and put is into the array
     if (catData){
         catData.map((current)=>{
             myArray.push(current)
@@ -35,15 +37,12 @@ function ViewCategory() {
 
     return (
         <div className='ViewAll'>
-    
             <div className="productsWrapper">
                 <div className="products">
-    
                     <div className="productCellWrapper">
                         <div className="productCellMain">
                             {catData ? catData.map((current, i) => {
                                 return (
-    
                                     <div className="productCell">
                                     <div className="showProduct" key={i} onClick={()=>{
                                         navigate('/productpage');

@@ -33,7 +33,9 @@ function Main(props) {
                                     </div>
                                 </div>
                                 <div className="clothing">
-                                    <div className="bannerTopImgWrapper">
+                                    <div className="bannerTopImgWrapper" onClick={()=>{
+
+                                    }}>
                                         <img className='bannerTopImg' src={dataArray[51].images[2]}/>
                                     </div>
                                     <div className="bannerBottomTitle">
