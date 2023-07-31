@@ -8,9 +8,19 @@
 - Home Page
 - View All Products Page
 - Search Bar / Display Search Page
-- Shopping Cart
-- Login/Signup
+- Search by Category
 - Styling Design to Match Jungle Theme
+
+<hr>
+
+## Would add in the future
+
+ - Main page Functionality
+ - Login/Signup Functionality
+ - Cart Functionality
+ - More Products and categories
+
+
 ## Home page
 ---
 ## Description
