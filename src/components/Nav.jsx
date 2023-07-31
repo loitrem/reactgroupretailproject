@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import React, {useContext} from "react";
 import { AppContext } from '../context/mainContext';
-import logo from '../logoJungle.png';
-import cart from '../cart.png';
+import logo from '../images/logoJungle.png';
+import cart from '../images/cart.png';
 import Search from "./Search";
 
 function Nav (){
