@@ -1,7 +1,7 @@
 # Jungle Retail Store
 ---
 ## This project was created with React
-<img src='![Alt text](src/images/Screenshot 2023-07-30 204058.jpg)'>
+<img src='![Alt text](src/images/Screenshot1.jpg)'>
 ---
 ## Jungle is a mock retail App, made to resemble Amazon.
 ## Features include
@@ -19,4 +19,4 @@ The user enters on the Home page with the capability of searching for a product 
 Another web page shows the user all catagories of items available for purchase. Some of these include electronics, clothing, jewelry, or furniture.
 ## Product Page
 Each product has its own page which includes product details. For example, details include the image, price, and brand.
-<img src='![Alt text](src/images/Screenshot 2023-07-30 204015.jpg)' />
+<img src='![Alt text](src/images/Screenshot2.jpg)' />
