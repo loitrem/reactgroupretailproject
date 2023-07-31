@@ -24,9 +24,9 @@ The user enters on the Home page with the capability of searching for a product 
 
 ## Contributions
 
-Erik - Git Czar, Main page, search bar, navbar and ensuring all code works together
-Quenton - Categories and Display Search
-Sarah - View all and Product Page
+ - Erik - Git Czar, Main page, search bar, navbar and ensuring all code works together
+ - Quenton - Categories and Display Search
+ - Sarah - View all and Product Page
 
 All three of us contributed to the readme
 
