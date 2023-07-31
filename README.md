@@ -54,8 +54,8 @@ All three of us contributed to the readme
 
  ## API Calls
 
- API calls were made using axios and https://dummyjson.com/ API
- API Documentation https://dummyjson.com/docs/products
+  - API calls were made using axios and https://dummyjson.com/ API
+  - API Documentation https://dummyjson.com/docs/products
 
  <hr>
 
