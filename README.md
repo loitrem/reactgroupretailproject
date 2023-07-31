@@ -78,4 +78,4 @@ All three of us contributed to the readme
 Another web page shows the user all catagories of items available for purchase. Some of these include electronics, clothing, jewelry, or furniture.
 ## Product Page
 Each product has its own page which includes product details. For example, details include the image, price, and brand.
-![Alt text](src/images/Screenshot1.jpg)
+![Alt text](src/images/Screenshot3.jpg)
