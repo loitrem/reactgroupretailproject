@@ -11,7 +11,7 @@ function Nav (){
     return (
         <div className="navWrapper">
             <div className="header">
-                <div className="headerLeft"><a href="#" className="logoHome"><img src={logo} alt="" className="logo" /></a></div>
+                <div className="headerLeft"><a href="/" className="logoHome"><img src={logo} alt="" className="logo" /></a></div>
                 <div className="HeaderMiddle"><Search/></div>
                 <div className="headerRight">
                     <div className="topHeaderLinks">
