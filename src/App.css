@@ -219,7 +219,7 @@ display: flex;
 }
 
 .bannerTopImgWrapper{
-
+border-bottom: 1px solid lightgray;
 }
 
 .bannerTopImg,.topMainTopImg{
@@ -254,7 +254,7 @@ width: 135px;
 .topMain {
   width: 375px;
   height: 200px;
-margin-top: 10px;
+  margin-top: 10px;
   border: 2px solid black;
   display: flex;
   align-items: center;
@@ -330,7 +330,7 @@ align-items: center;
 }
 
 .midMainTop {
-
+  border-bottom: 1px solid lightgray;
 }
 
 .midMainTopImg {
@@ -361,7 +361,7 @@ align-items: center;
 }
 
 .bottomMainTop {
-
+  border-bottom: 1px solid lightgray;
 }
 
 .bottomMainTopImg {
